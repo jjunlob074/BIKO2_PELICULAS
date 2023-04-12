@@ -1,0 +1,10 @@
+uuid: 298cc5fc-ddc3-4b06-8dd0-68aee3e0c6f6
+langcode: es
+status: true
+dependencies: {  }
+id: trailer_youtube
+label: trailer_youtube
+icon_uuid: null
+icon_default: null
+description: 'trailers de las películas'
+behavior_plugins: {  }

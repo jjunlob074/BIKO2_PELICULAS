@@ -1,0 +1,60 @@
+uuid: b51a6b02-4dee-443f-8e17-3049f6d0cc1c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.trailer_youtube.field_trailer_enlace
+    - field.field.paragraph.trailer_youtube.field_trailer_imagen
+    - field.field.paragraph.trailer_youtube.field_trailer_resumen
+    - field.field.paragraph.trailer_youtube.field_trailer_teaser
+    - image.style.large
+    - paragraphs.paragraphs_type.trailer_youtube
+  module:
+    - image
+    - link
+    - text
+id: paragraph.trailer_youtube.default
+targetEntityType: paragraph
+bundle: trailer_youtube
+mode: default
+content:
+  field_trailer_enlace:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_trailer_imagen:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: large
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_trailer_resumen:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_trailer_teaser:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden: {  }

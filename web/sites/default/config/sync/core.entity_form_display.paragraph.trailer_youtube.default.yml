@@ -1,0 +1,57 @@
+uuid: 056eb9d2-efdf-4b1e-89d1-4546c4696c0c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.trailer_youtube.field_trailer_enlace
+    - field.field.paragraph.trailer_youtube.field_trailer_imagen
+    - field.field.paragraph.trailer_youtube.field_trailer_resumen
+    - field.field.paragraph.trailer_youtube.field_trailer_teaser
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.trailer_youtube
+  module:
+    - image
+    - link
+    - media_library
+    - text
+id: paragraph.trailer_youtube.default
+targetEntityType: paragraph
+bundle: trailer_youtube
+mode: default
+content:
+  field_trailer_enlace:
+    type: link_default
+    weight: 2
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_trailer_imagen:
+    type: image_image
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_trailer_resumen:
+    type: text_textarea_with_summary
+    weight: 1
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_trailer_teaser:
+    type: media_library_widget
+    weight: 3
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

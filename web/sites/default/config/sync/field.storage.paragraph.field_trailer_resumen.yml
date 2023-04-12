@@ -1,0 +1,19 @@
+uuid: bc84e1f1-d01f-4bb3-abaf-e87aa7d40476
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_trailer_resumen
+field_name: field_trailer_resumen
+entity_type: paragraph
+type: text_with_summary
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

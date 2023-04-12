@@ -1,0 +1,18 @@
+uuid: 1fa0b803-7f75-486b-ae69-77cd23c010ff
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.peliculas
+id: node.peliculas.title
+field_name: title
+entity_type: node
+bundle: peliculas
+label: 'Título Administrativo'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

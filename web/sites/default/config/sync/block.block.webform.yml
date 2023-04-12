@@ -1,0 +1,26 @@
+uuid: fae196a0-891a-4209-a007-892cd8cf72ba
+langcode: es
+status: true
+dependencies:
+  config:
+    - webform.webform.formulario_prueba
+  module:
+    - webform
+  theme:
+    - stable9_child
+id: webform
+theme: stable9_child
+region: footer
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: '¿QUIERES SABER MÁS SOBRE NOSOTROS?'
+  label_display: visible
+  provider: webform
+  webform_id: formulario_prueba
+  default_data: ''
+  redirect: false
+  lazy: false
+visibility: {  }

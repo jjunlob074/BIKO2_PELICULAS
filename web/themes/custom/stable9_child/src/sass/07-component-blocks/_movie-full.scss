@@ -1,0 +1,24 @@
+.cb-movie-full {
+  margin:20px auto;
+  border-radius:20px;
+  width:90%;
+  height:90%;
+  padding:50px;
+  background: lightblue;
+  text-align: center;
+  .c-title {
+   span {
+     font-size: 64px;
+   }
+  }
+  .sha1 {
+    float:left;
+    font-style: italic;
+    font-size: 12px;
+  }
+  .c-text__sinopsis {
+    text-align: center;
+    word-wrap: break-word;
+  }
+
+}

@@ -1,0 +1,46 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for base module.
+ *
+ */
+
+//function base_preprocess_views_view_field(&$variables) {
+//  /** @var \Drupal\views\ViewExecutable $view */
+//  $view = $variables['view'];
+//  if (($view->id()=='categorias') && ($view->current_display=='block_1')){
+//    $variables['output'] .= 'HOLA';
+//  }
+use Drupal\views\Plugin\views\cache\CachePluginBase;
+use Drupal\views\ViewExecutable;
+
+/**
+ * Implements HOOK_views_data_alter()
+ */
+//function base_views_data_alter(array &$data)  {
+//  /** @var \Drupal\views\ViewExecutable $view */
+//  if ($view->id() == 'categorias' && $view->current_display== 'block_1') {
+//
+//    foreach ($view->result as $r => $result) {
+//      // do whatever you want with each "row"
+//    }
+//
+//
+//  }
+//
+//  // other views might go here
+//}
+/**
+ * Implements HOOK_preprocess_node().
+ */
+function base_preprocess_node(array &$variables) {
+  // Verificar si el nodo es de tipo "películas".
+  if ($variables['node']->getType() == 'peliculas') {
+    // Calcular el valor SHA-1 del título del nodo.
+    $sha1 = sha1($variables['node']->getTitle());
+    // Agregar la variable SHA-1 al array de variables.
+    $variables['sha1'] = $sha1;
+  }
+}
+

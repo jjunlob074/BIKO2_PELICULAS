@@ -1,0 +1,22 @@
+uuid: 17357294-2e5e-4620-8554-2d9ba10c1a12
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: es_peliculas
+label: ES-PELICULAS
+type: 'canonical_entities:node'
+pattern: 'cartelera/[node:field_categorias_peliculas]/[node:title]'
+selection_criteria:
+  611ee53e-0ee2-405e-9e10-b5b904a96420:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 611ee53e-0ee2-405e-9e10-b5b904a96420
+    context_mapping:
+      node: node
+    bundles:
+      peliculas: peliculas
+selection_logic: and
+weight: -5
+relationships: {  }

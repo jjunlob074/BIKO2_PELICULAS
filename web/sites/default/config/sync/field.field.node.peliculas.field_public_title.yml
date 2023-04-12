@@ -1,0 +1,26 @@
+uuid: 1dbfac07-22fb-4b77-8245-656dc0f37d81
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_public_title
+    - node.type.peliculas
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    allowed_formats:
+      - html_textos
+id: node.peliculas.field_public_title
+field_name: field_public_title
+entity_type: node
+bundle: peliculas
+label: public_title
+description: 'Es el título público que verá el usuario al acceder al contenido'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

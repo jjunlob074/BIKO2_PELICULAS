@@ -1,0 +1,43 @@
+uuid: bc4a0c0a-75ac-4a4f-8f3b-088587d4b4e1
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.pill
+    - field.field.node.peliculas.body
+    - field.field.node.peliculas.field_categorias_peliculas
+    - field.field.node.peliculas.field_image
+    - field.field.node.peliculas.field_public_title
+    - field.field.node.peliculas.field_publicacion_pelicula
+    - field.field.node.peliculas.field_relacionadas
+    - field.field.node.peliculas.field_trailer_youtube
+    - image.style.thumbnail
+    - node.type.peliculas
+  module:
+    - image
+    - user
+id: node.peliculas.pill
+targetEntityType: node
+bundle: peliculas
+mode: pill
+content:
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: thumbnail
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  field_categorias_peliculas: true
+  field_public_title: true
+  field_publicacion_pelicula: true
+  field_relacionadas: true
+  field_trailer_youtube: true
+  langcode: true
+  links: true

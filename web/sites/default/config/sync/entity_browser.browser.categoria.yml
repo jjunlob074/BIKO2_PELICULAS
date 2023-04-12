@@ -1,0 +1,31 @@
+uuid: 6bfbbbf1-be3c-46cc-8d74-472b4aaeb983
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.tags
+  module:
+    - views
+name: categoria
+label: Categoría
+display: modal
+display_configuration:
+  width: '650'
+  height: '500'
+  link_text: 'Seleccione las categorías'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  c55b1363-bcfb-4669-8f0b-c44eef9bf2b1:
+    id: view
+    uuid: c55b1363-bcfb-4669-8f0b-c44eef9bf2b1
+    label: view
+    weight: 1
+    settings:
+      submit_text: 'Seleccione la categoría'
+      auto_select: false
+      view: tags
+      view_display: entity_browser_1

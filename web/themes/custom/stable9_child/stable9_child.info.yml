@@ -1,0 +1,14 @@
+name: stable9_child
+type: theme
+description: A base theme using Drupal 9.0.0's core markup and CSS.
+package: Core
+version: VERSION
+base theme: stable9
+hidden: false
+core_version_requirement: ^10
+
+libraries:
+  - stable9_child/styles
+libraries-override:
+
+

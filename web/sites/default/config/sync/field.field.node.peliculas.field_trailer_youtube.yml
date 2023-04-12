@@ -1,0 +1,31 @@
+uuid: c166e428-834f-4abc-903a-3326fb937dc6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_trailer_youtube
+    - node.type.peliculas
+    - paragraphs.paragraphs_type.trailer_youtube
+  module:
+    - entity_reference_revisions
+id: node.peliculas.field_trailer_youtube
+field_name: field_trailer_youtube
+entity_type: node
+bundle: peliculas
+label: trailer_youtube
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      trailer_youtube: trailer_youtube
+    negate: 0
+    target_bundles_drag_drop:
+      trailer_youtube:
+        weight: 2
+        enabled: true
+field_type: entity_reference_revisions

@@ -1,0 +1,23 @@
+uuid: de716405-163a-4722-b0c1-35f229e1c26d
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - stable9_child
+id: marcadelsitio
+theme: stable9_child
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Marca del sitio'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

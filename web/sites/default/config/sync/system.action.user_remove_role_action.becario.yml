@@ -1,0 +1,14 @@
+uuid: fcffbb3a-aba0-4d71-af33-cd0b8d212f37
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.becario
+  module:
+    - user
+id: user_remove_role_action.becario
+label: 'Elimina el rol Becario al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: becario

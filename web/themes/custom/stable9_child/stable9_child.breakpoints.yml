@@ -1,0 +1,20 @@
+comminfo.phone:
+  label: phone
+  mediaQuery: '(max-width: 767px)'
+  weight: 0
+
+comminfo.tablet:
+  label: tablet
+  mediaQuery: '(min-width: 768px) and (max-width: 1024px)'
+  weight: 1
+
+comminfo.desktop:
+  label: desktop
+  mediaQuery: '(min-width: 1025px) and (max-width: 1250px)'
+  weight: 2
+
+comminfo.lg-desktop:
+  label: lg-desktop
+  mediaQuery: '(min-width: 1251px)'
+  weight: 3
+

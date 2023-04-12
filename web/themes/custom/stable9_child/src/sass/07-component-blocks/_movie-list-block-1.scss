@@ -1,0 +1,35 @@
+.cb-movie-list-block-1 {
+  width: 100%;
+  align-items: center;
+  background: lightgoldenrodyellow;
+  margin-top: 20px;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid lightcoral;
+  border-radius: 20px;
+
+  .c-title__title {
+    font-style: italic;
+    color: lightcoral;
+  }
+  .c-image {
+    margin-right: 10px;
+  }
+
+    a {
+      text-decoration: none;
+      text-align: center;
+      word-wrap: break-word;
+      color: lightcoral;
+    }
+
+    a:hover {
+      color: crimson;
+      text-decoration: underline;
+
+    }
+  span {
+    font-size: 20px;
+  }
+
+}

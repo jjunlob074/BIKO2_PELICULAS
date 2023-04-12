@@ -1,0 +1,27 @@
+uuid: 609244bf-0322-458d-9a3f-526a4255837e
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.logo
+    - field.field.block_content.logo.field_logo
+  module:
+    - image
+id: block_content.logo.default
+targetEntityType: block_content
+bundle: logo
+mode: default
+content:
+  field_logo:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

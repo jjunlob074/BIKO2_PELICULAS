@@ -1,0 +1,13 @@
+uuid: 16ea174e-05bc-4a6a-9d34-e397f262b56d
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: sL588ui1E_8-2c_UupwyYxcqX2OVyMFp3HTLbbFqvPc
+id: global
+label: Global
+tags:
+  canonical_url: '[current-page:url]'
+  description: 'bienvenido a FILM4IU,  tu web de películas'
+  news_keywords: estrenos
+  title: '[current-page:title] | [site:name]'

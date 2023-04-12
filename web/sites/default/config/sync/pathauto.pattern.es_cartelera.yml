@@ -1,0 +1,22 @@
+uuid: cb1deea6-4395-4b03-9b64-a257086a3196
+langcode: es
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: es_cartelera
+label: ES-CARTELERA
+type: 'canonical_entities:taxonomy_term'
+pattern: '/cartelera/[term:name]'
+selection_criteria:
+  b91ca3b4-74fc-4b24-8c2d-214e5e8e56a2:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: b91ca3b4-74fc-4b24-8c2d-214e5e8e56a2
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      categoria_peliculas: categoria_peliculas
+selection_logic: and
+weight: -5
+relationships: {  }

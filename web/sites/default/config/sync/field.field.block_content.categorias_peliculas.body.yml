@@ -1,0 +1,23 @@
+uuid: 9bc653a0-1cba-47c1-9e79-4d8dff43772e
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.categorias_peliculas
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.categorias_peliculas.body
+field_name: body
+entity_type: block_content
+bundle: categorias_peliculas
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

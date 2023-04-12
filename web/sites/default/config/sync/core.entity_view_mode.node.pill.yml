@@ -1,0 +1,10 @@
+uuid: f7c52090-f902-4fee-a4cb-db68e59bc53b
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.pill
+label: pill
+targetEntityType: node
+cache: true

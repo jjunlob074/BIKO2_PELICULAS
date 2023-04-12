@@ -1,0 +1,18 @@
+uuid: 5356b4ec-e645-4cb8-a539-310c1e509fef
+langcode: es
+status: true
+dependencies: {  }
+id: node__peliculas
+label: 'Contenido: peliculas'
+tags:
+  canonical_url: '[site:url]'
+  description: 'información sobre las peliculas'
+  news_keywords: peliculas
+  og_description: '[node:body]'
+  og_image: '[node:field_image]'
+  og_site_name: '[site:name]'
+  og_title: '[node:field_public_title]'
+  og_type: movies
+  og_url: '[node:url]'
+  shortlink: '[site:url-brief]'
+  title: '[current-page:title]'

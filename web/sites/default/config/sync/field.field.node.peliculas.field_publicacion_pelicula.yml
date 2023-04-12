@@ -1,0 +1,21 @@
+uuid: 885b7194-a692-44f0-8619-b81eceecf0bb
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publicacion_pelicula
+    - node.type.peliculas
+  module:
+    - datetime
+id: node.peliculas.field_publicacion_pelicula
+field_name: field_publicacion_pelicula
+entity_type: node
+bundle: peliculas
+label: publicacion_pelicula
+description: 'CUANDO SE HA ESTRENADO LA PELÍCULA EN CINES'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,18 @@
+uuid: d17b345a-813c-447a-9974-a28c2d8f6f10
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: peliculas
+type: peliculas
+description: 'ESTE CONTENIDO AÑADE UNA PELICULA A DRUPAL'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

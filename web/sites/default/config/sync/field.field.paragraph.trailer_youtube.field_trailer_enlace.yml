@@ -1,0 +1,23 @@
+uuid: b693a7a7-e0ce-4f9d-a329-dd56ec86625b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_trailer_enlace
+    - paragraphs.paragraphs_type.trailer_youtube
+  module:
+    - link
+id: paragraph.trailer_youtube.field_trailer_enlace
+field_name: field_trailer_enlace
+entity_type: paragraph
+bundle: trailer_youtube
+label: trailer_enlace
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

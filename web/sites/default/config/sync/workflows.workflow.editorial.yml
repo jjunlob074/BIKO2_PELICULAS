@@ -1,0 +1,47 @@
+uuid: c83ce389-b9aa-4fd4-a5c7-b373e6d9b73f
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.peliculas
+  module:
+    - content_moderation
+_core:
+  default_config_hash: T7gMMyFbTYLalxpIOnzJebvek2OW0b1RgLVE9I2y228
+id: editorial
+label: Revision_becario
+type: content_moderation
+type_settings:
+  states:
+    archived:
+      label: Revision
+      weight: -1
+      published: false
+      default_revision: true
+    draft:
+      label: Borrador
+      weight: -2
+      published: false
+      default_revision: false
+    published:
+      label: Publicado
+      weight: 0
+      published: true
+      default_revision: true
+  transitions:
+    enviar_a_revision:
+      label: 'enviar a revision'
+      from:
+        - draft
+      to: archived
+      weight: 0
+    publicar:
+      label: publicar
+      from:
+        - archived
+      to: published
+      weight: 1
+  entity_types:
+    node:
+      - peliculas
+  default_moderation_state: draft

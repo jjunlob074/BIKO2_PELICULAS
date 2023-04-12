@@ -1,0 +1,8 @@
+uuid: 69819917-d2a2-4167-b76e-fb1626f457ec
+langcode: es
+status: true
+dependencies: {  }
+id: categorias_peliculas
+label: categorias_peliculas
+revision: 0
+description: 'este bloque permite filtrar las películas por su categoría'

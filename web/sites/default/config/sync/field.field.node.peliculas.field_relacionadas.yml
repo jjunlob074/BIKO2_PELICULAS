@@ -1,0 +1,28 @@
+uuid: e2bbb90a-46e2-40e3-8457-a57f012ee93c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_relacionadas
+    - node.type.peliculas
+id: node.peliculas.field_relacionadas
+field_name: field_relacionadas
+entity_type: node
+bundle: peliculas
+label: relacionadas
+description: 'Muestra las películas relacionadas con la ficha de la película que está viendo el usuario'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      peliculas: peliculas
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

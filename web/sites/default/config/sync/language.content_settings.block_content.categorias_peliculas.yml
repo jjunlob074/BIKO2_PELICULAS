@@ -1,0 +1,11 @@
+uuid: b6475f2d-2eb5-4299-86a6-d9fcb9dd27f8
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.categorias_peliculas
+id: block_content.categorias_peliculas
+target_entity_type_id: block_content
+target_bundle: categorias_peliculas
+default_langcode: site_default
+language_alterable: false

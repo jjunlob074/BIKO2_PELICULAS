@@ -1,0 +1,23 @@
+uuid: 7694458f-ae99-4561-b28b-e80e09843ce6
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.categorias_peliculas
+    - field.field.block_content.categorias_peliculas.body
+  module:
+    - text
+id: block_content.categorias_peliculas.default
+targetEntityType: block_content
+bundle: categorias_peliculas
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,8 @@
+uuid: c55dca84-7042-4d5c-ab03-b453600f74f6
+langcode: es
+status: true
+dependencies: {  }
+id: logo
+label: logo
+revision: 0
+description: 'bloque con el logo de la pagina'

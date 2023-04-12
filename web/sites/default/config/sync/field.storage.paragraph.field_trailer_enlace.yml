@@ -1,0 +1,19 @@
+uuid: 89cd24cb-3f2c-4982-b24f-8a2e807f1b18
+langcode: es
+status: true
+dependencies:
+  module:
+    - link
+    - paragraphs
+id: paragraph.field_trailer_enlace
+field_name: field_trailer_enlace
+entity_type: paragraph
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,29 @@
+uuid: dd5bb06c-f23e-47ed-bc89-4d3ab845455f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_trailer_teaser
+    - media.type.remote_video
+    - paragraphs.paragraphs_type.trailer_youtube
+id: paragraph.trailer_youtube.field_trailer_teaser
+field_name: field_trailer_teaser
+entity_type: paragraph
+bundle: trailer_youtube
+label: trailer_teaser
+description: 'Es el teaser de la película'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      remote_video: remote_video
+    sort:
+      field: field_media_oembed_video
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,20 @@
+uuid: 81aff185-df12-4f62-8579-79de8c664c27
+langcode: es
+status: true
+dependencies:
+  module:
+    - datetime
+    - node
+id: node.field_publicacion_pelicula
+field_name: field_publicacion_pelicula
+entity_type: node
+type: datetime
+settings:
+  datetime_type: date
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

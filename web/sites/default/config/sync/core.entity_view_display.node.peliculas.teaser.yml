@@ -1,0 +1,65 @@
+uuid: 81fe54f9-4ed7-4078-8f6a-0806c27e6626
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.peliculas.body
+    - field.field.node.peliculas.field_categorias_peliculas
+    - field.field.node.peliculas.field_image
+    - field.field.node.peliculas.field_public_title
+    - field.field.node.peliculas.field_publicacion_pelicula
+    - field.field.node.peliculas.field_relacionadas
+    - field.field.node.peliculas.field_trailer_youtube
+    - node.type.peliculas
+    - responsive_image.styles.responsive
+  module:
+    - datetime
+    - responsive_image
+    - text
+    - user
+id: node.peliculas.teaser
+targetEntityType: node
+bundle: peliculas
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_categorias_peliculas:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_image:
+    type: responsive_image
+    label: hidden
+    settings:
+      responsive_image_style: responsive
+      image_link: content
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_publicacion_pelicula:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: olivero_medium
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  field_public_title: true
+  field_relacionadas: true
+  field_trailer_youtube: true
+  langcode: true
+  links: true

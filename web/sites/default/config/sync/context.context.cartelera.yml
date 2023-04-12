@@ -1,0 +1,74 @@
+uuid: 8ed0393c-535c-4ec6-a3b0-bafcb633965b
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.categorias
+    - views.view.movie_list
+  module:
+    - taxonomy
+    - views
+label: cartelera
+name: cartelera
+group: null
+description: ''
+requireAllConditions: false
+disabled: false
+conditions:
+  view_inclusion:
+    id: view_inclusion
+    negate: false
+    uuid: fd61b600-8056-435c-a872-1790afe2ec97
+    context_mapping: {  }
+    view_inclusion:
+      view-movie_list-page: view-movie_list-page
+  'entity_bundle:taxonomy_term':
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: 9c4473f4-7aef-4d73-9bf2-2e942df60100
+    context_mapping:
+      taxonomy_term: '@taxonomy_term.taxonomy_term_route_context:taxonomy_term'
+    bundles:
+      categoria_peliculas: categoria_peliculas
+reactions:
+  blocks:
+    id: blocks
+    uuid: cb141423-8093-40d3-8923-1558711ef941
+    blocks:
+      1daecfde-d964-4be3-bc4a-e58513ae891c:
+        uuid: 1daecfde-d964-4be3-bc4a-e58513ae891c
+        id: 'views_block:categorias-block_1'
+        label: ''
+        provider: views
+        label_display: visible
+        region: sidebar_first
+        weight: '0'
+        custom_id: views_block_categorias_block_1
+        theme: stable9_child
+        css_class: ''
+        unique: 0
+        context_id: cartelera
+        context_mapping: {  }
+        views_label: ''
+        items_per_page: none
+        third_party_settings: {  }
+      e90951f6-fcb9-4761-8916-92c4cadde6ef:
+        uuid: e90951f6-fcb9-4761-8916-92c4cadde6ef
+        id: 'views_block:movie_list-block_1'
+        label: ''
+        provider: views
+        label_display: visible
+        region: sidebar_first
+        weight: '0'
+        custom_id: views_block_movie_list_block_1
+        theme: stable9_child
+        css_class: ''
+        unique: 0
+        context_id: cartelera
+        context_mapping: {  }
+        views_label: ''
+        items_per_page: none
+        third_party_settings: {  }
+    include_default_blocks: 1
+    saved: false
+weight: 0
