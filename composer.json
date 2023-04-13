@@ -33,6 +33,7 @@
         "drupal/redirect": "^1.8",
         "drupal/stable": "^2.0",
         "drupal/symfony_mailer": "^1.2",
+        "drupal/term_reference_tree": "^2.0",
         "drupal/tvi": "^2.0@alpha",
         "drupal/twig_tweak": "^3.2",
         "drupal/webform": "^6.2@beta",
