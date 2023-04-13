@@ -31,6 +31,7 @@
         "drupal/paragraphs": "^1.15",
         "drupal/pathauto": "^1.11",
         "drupal/redirect": "^1.8",
+        "drupal/search_api_solr": "^4.2",
         "drupal/stable": "^2.0",
         "drupal/symfony_mailer": "^1.2",
         "drupal/term_reference_tree": "^2.0",

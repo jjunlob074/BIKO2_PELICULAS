@@ -12,7 +12,7 @@ image_style_mappings:
   -
     image_mapping_type: sizes
     image_mapping:
-      sizes: 100vw
+      sizes: '(max-width: 767px) 16x9_small, (min-width: 768px) and (max-width: 1024px) 16x9_medium, (min-width: 1251px) 16x9 large'
       sizes_image_styles:
         - 16x9_large
         - 16x9_medium

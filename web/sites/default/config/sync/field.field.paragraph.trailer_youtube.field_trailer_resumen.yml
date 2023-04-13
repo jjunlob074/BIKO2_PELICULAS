@@ -6,7 +6,11 @@ dependencies:
     - field.storage.paragraph.field_trailer_resumen
     - paragraphs.paragraphs_type.trailer_youtube
   module:
+    - allowed_formats
     - text
+third_party_settings:
+  allowed_formats:
+    allowed_formats: {  }
 id: paragraph.trailer_youtube.field_trailer_resumen
 field_name: field_trailer_resumen
 entity_type: paragraph
@@ -14,7 +18,7 @@ bundle: trailer_youtube
 label: trailer_resumen
 description: 'resumen del trailer'
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

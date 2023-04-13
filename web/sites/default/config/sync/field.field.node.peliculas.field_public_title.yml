@@ -19,7 +19,7 @@ bundle: peliculas
 label: public_title
 description: 'Es el título público que verá el usuario al acceder al contenido'
 required: true
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

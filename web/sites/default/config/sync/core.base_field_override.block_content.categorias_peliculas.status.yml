@@ -1,0 +1,22 @@
+uuid: 47b5349a-407e-482a-b9f6-000c4e802873
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.categorias_peliculas
+id: block_content.categorias_peliculas.status
+field_name: status
+entity_type: block_content
+bundle: categorias_peliculas
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

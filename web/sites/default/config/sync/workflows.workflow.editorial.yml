@@ -35,8 +35,14 @@ type_settings:
         - draft
       to: archived
       weight: 0
+    publicado_publicado:
+      label: 'modificar publicado'
+      from:
+        - published
+      to: published
+      weight: 2
     publicar:
-      label: publicar
+      label: 'aprobar publicación'
       from:
         - archived
       to: published

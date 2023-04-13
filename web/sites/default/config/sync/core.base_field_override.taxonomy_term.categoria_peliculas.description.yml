@@ -1,0 +1,20 @@
+uuid: e58d3fff-c3ad-40d8-97a3-ddb2571b95a3
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categoria_peliculas
+  module:
+    - text
+id: taxonomy_term.categoria_peliculas.description
+field_name: description
+entity_type: taxonomy_term
+bundle: categoria_peliculas
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,22 @@
+uuid: 91ea5e24-300d-4ac4-8c22-7aeabec0d9a5
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.logo
+id: block_content.logo.status
+field_name: status
+entity_type: block_content
+bundle: logo
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

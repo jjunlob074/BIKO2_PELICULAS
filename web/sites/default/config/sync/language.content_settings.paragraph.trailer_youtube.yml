@@ -1,0 +1,18 @@
+uuid: bd17d617-9830-483b-b044-1751ce7d98b1
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.trailer_youtube
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+id: paragraph.trailer_youtube
+target_entity_type_id: paragraph
+target_bundle: trailer_youtube
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,22 @@
+uuid: e0e20092-08c4-47ed-abe0-6e8bf8a0b19f
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categoria_peliculas
+id: taxonomy_term.categoria_peliculas.status
+field_name: status
+entity_type: taxonomy_term
+bundle: categoria_peliculas
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

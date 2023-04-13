@@ -1,0 +1,20 @@
+uuid: 5e2d7e6b-7e02-4422-98cd-b7d61cd819a4
+langcode: es
+status: true
+dependencies:
+  module:
+    - language
+  theme:
+    - stable9_child
+id: alternadordeidioma
+theme: stable9_child
+region: footer
+weight: 0
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: IDIOMAS
+  label_display: visible
+  provider: language
+visibility: {  }

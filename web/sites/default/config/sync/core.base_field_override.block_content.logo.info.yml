@@ -1,0 +1,18 @@
+uuid: ee82a669-1733-423e-bf31-0f63d8ce8fdf
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.logo
+id: block_content.logo.info
+field_name: info
+entity_type: block_content
+bundle: logo
+label: 'Descripción del bloque'
+description: 'Una breve descripción de su bloque.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
