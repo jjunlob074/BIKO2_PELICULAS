@@ -1,0 +1,23 @@
+id: categoria_films
+migration_tags:
+  - 'categorias_peliculas'
+label: 'categories films migration from CSV'
+source:
+  plugin: csv
+  path: 'public://migrations/categorias.csv'
+  header_row_count: 1
+  ids:
+    - ID
+  fields:
+    -
+      name: ID
+      label: 'ID'
+    -
+      name: NOMBRE
+      label: 'NOMBRE'
+process:
+  tid: ID
+  name: NOMBRE
+
+destination:
+  plugin: entity:taxonomy_term

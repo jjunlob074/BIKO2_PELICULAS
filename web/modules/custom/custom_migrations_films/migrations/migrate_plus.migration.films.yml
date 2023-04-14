@@ -1,0 +1,47 @@
+id: custom_films
+label: 'Peliculas del sitio web'
+
+source:
+  plugin: csv
+  path: 'public://migrations/films.csv'
+  header_row_count: 1
+  ids:
+    - ID
+  fields:
+    -
+      name: ID
+      label: 'ID'
+    -
+      name: PUBLISHED
+      label: 'PUBLISHED'
+    -
+      name: TITLE
+      label: 'TITLE'
+    -
+      name: SINOPSIS
+      label: 'SINOPSIS'
+    -
+      name: PUBLICACION
+      label: 'PUBLICACION'
+
+
+process:
+  # CAMPOS DEL CONTENIDO
+  type:
+    plugin: default_value
+    default_value: peliculas
+  status: PUBLISHED
+  path/pathauto:
+    plugin: default_value
+    default_value: 1
+  uid:
+    plugin: default_value
+    default_value: 1
+  title: TITLE
+  'body/value': SINOPSIS
+  field_publicacion_pelicula: PUBLICACION
+
+destination:
+  plugin: entity:node
+
+
