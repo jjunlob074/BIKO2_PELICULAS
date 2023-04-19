@@ -2,7 +2,7 @@ uuid: 62e734fa-1e64-4ee0-93d6-013293a0ac3a
 langcode: es
 status: true
 dependencies: {  }
-name: categoria_peliculas
+name: 'Películas - Categoría'
 vid: categoria_peliculas
 description: 'categorías de las películas subidas'
 weight: 0
