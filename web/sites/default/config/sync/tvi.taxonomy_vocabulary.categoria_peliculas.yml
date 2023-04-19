@@ -1,5 +1,0 @@
-enable_override: true
-view: movie_list
-view_display: page
-inherit_settings: false
-pass_arguments: false
