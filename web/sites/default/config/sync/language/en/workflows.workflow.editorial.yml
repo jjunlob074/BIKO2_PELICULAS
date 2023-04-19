@@ -1,9 +1,0 @@
-label: Editorial
-type_settings:
-  states:
-    archived:
-      label: Archived
-    draft:
-      label: Draft
-    published:
-      label: Published

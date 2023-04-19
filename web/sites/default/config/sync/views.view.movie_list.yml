@@ -498,7 +498,7 @@ display:
           exposed: true
           expose:
             operator_id: field_public_title_value_op
-            label: 'public_title (field_public_title)'
+            label: 'Buscar Película: '
             description: ''
             use_operator: false
             operator: field_public_title_value_op
