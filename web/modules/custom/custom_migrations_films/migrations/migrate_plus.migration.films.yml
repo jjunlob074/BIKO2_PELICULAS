@@ -24,13 +24,19 @@ source:
       name: PUBLICACION
       label: 'PUBLICACION'
 
-
 process:
   # CAMPOS DEL CONTENIDO
   type:
     plugin: default_value
     default_value: peliculas
   status: PUBLISHED
+  # AÑADIDO POR EL WORKFLOW CREADO EN DRUPAL
+  moderation_state:
+    plugin: static_map
+    source: published
+    map:
+      1: 'published'
+      0: 'draft'
   path/pathauto:
     plugin: default_value
     default_value: 1
@@ -39,6 +45,12 @@ process:
     default_value: 1
   title: TITLE
   'body/value': SINOPSIS
+  field_categoria:
+    plugin: migration_lookup
+    migration: migrate_categorias
+    source: CATEGORIA
+    no_stub: true
+  # CORREGIR LA FECHA PARA QUE SE EXPORTE CORRECTAMENTE
   field_publicacion_pelicula: PUBLICACION
 
 destination:

@@ -1,6 +1,6 @@
 id: categoria_films
 migration_tags:
-  - 'categorias_peliculas'
+  - 'categoria_peliculas'
 label: 'categories films migration from CSV'
 source:
   plugin: csv
@@ -16,8 +16,8 @@ source:
       name: NOMBRE
       label: 'NOMBRE'
 process:
-  tid: ID
   name: NOMBRE
 
 destination:
   plugin: entity:taxonomy_term
+  default_bundle: categoria_peliculas
