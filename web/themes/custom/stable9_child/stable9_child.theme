@@ -9,3 +9,12 @@
 function stable9_child_theme_suggestions_views_view_alter(array &$suggestions, array $variables) {
   $suggestions[] = 'views_view__' . $variables['view']->id();
 }
+/**
+ * Implements HOOK_preprocess_views_exposed_form().
+ */
+function stable9_child_preprocess_views_exposed_form(&$variables){
+if ($variables['form']['#id']== "views-exposed-form-movie-list-page"){
+  $variables['form']["actions"]["submit"]["#value"]= "Buscar";
+}
+
+}

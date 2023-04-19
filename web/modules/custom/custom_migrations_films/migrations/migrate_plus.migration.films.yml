@@ -8,19 +8,25 @@ source:
   ids:
     - ID
   fields:
-    -
+    0:
       name: ID
       label: 'ID'
-    -
+    1:
       name: PUBLISHED
       label: 'PUBLISHED'
-    -
+    2:
+      name: PATH_ALIAS
+      label: 'PATH_ALIAS'
+    3:
       name: TITLE
       label: 'TITLE'
-    -
+    4:
       name: SINOPSIS
       label: 'SINOPSIS'
-    -
+    5:
+      name: CATEGORIA
+      label: 'CATEGORIA'
+    6:
       name: PUBLICACION
       label: 'PUBLICACION'
 
@@ -33,10 +39,11 @@ process:
   # AÑADIDO POR EL WORKFLOW CREADO EN DRUPAL
   moderation_state:
     plugin: static_map
-    source: published
+    source: PUBLISHED
     map:
       1: 'published'
       0: 'draft'
+  # AÑADIDO POR EL PATHAUTO
   path/pathauto:
     plugin: default_value
     default_value: 1
@@ -45,13 +52,18 @@ process:
     default_value: 1
   title: TITLE
   'body/value': SINOPSIS
-  field_categoria:
+  # EXPORTACIÓN DE CATEGORÍA
+  field_categorias_peliculas:
     plugin: migration_lookup
-    migration: migrate_categorias
+    migration: categoria_films
     source: CATEGORIA
     no_stub: true
   # CORREGIR LA FECHA PARA QUE SE EXPORTE CORRECTAMENTE
-  field_publicacion_pelicula: PUBLICACION
+  field_publicacion_pelicula:
+    plugin: format_date
+    from_format: 'd/m/Y'
+    to_format: 'Y-m-d'
+    source: PUBLICACION
 
 destination:
   plugin: entity:node

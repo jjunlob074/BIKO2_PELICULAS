@@ -5,5 +5,24 @@
   margin-top: 20px;
   margin-bottom:30px;
   border-radius: 20px;
+  form {
+    width: 500px;
+    background: cornflowerblue;
+    text-align: center;
+    padding:10px;
+    border-radius: 5px;
+  }
+  .button{
+    margin-top: 10px;
+    background: white;
+    font-style: italic;
+    padding:5px;
+    border-radius: 5px;
+  }
+  .button:hover {
+    background: black;
+    color:white;
+  }
 }
+
 
