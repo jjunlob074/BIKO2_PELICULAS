@@ -1,0 +1,14 @@
+.c-spoiler__button{
+  color:darkblue;
+  background: lightgreen;
+  padding: 5px;
+}
+.c-spoiler__button:hover{
+  color:black;
+  background: lightcoral;
+  padding: 5px;
+}
+
+.c-spoiler__text {
+  display:none;
+}

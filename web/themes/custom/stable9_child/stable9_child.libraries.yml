@@ -6,3 +6,10 @@ styles:
   js:
     node_modules/bootstrap/dist/js/bootstrap.bundle.js: {}
 
+spoiler:
+  version: 1.0
+  js:
+    lib/spoiler/spoiler.js: {}
+  css:
+    theme:
+      lib/spoiler/spoiler.css: {}

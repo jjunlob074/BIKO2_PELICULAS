@@ -1,0 +1,9 @@
+spoiler:
+  version: 1.0
+  css:
+    theme:
+      lib/spoiler/spoiler.css: {}
+  js:
+    lib/spoiler/spoiler.js: {}
+  dependencies:
+    - core/jquery

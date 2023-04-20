@@ -9,6 +9,7 @@ core_version_requirement: ^10
 
 libraries:
   - stable9_child/styles
+  - stable9_child/spoiler
 libraries-override:
 
 
