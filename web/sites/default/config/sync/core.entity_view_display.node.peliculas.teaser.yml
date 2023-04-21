@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.peliculas.body
+    - field.field.node.peliculas.field_carousel
     - field.field.node.peliculas.field_categorias_peliculas
     - field.field.node.peliculas.field_image
     - field.field.node.peliculas.field_public_title
@@ -30,6 +31,11 @@ content:
       trim_length: 600
     third_party_settings: {  }
     weight: 1
+    region: content
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
     region: content
   field_categorias_peliculas:
     type: entity_reference_label
@@ -58,8 +64,10 @@ content:
     weight: 2
     region: content
 hidden:
+  field_carousel: true
   field_public_title: true
   field_relacionadas: true
   field_trailer_youtube: true
   langcode: true
   links: true
+  search_api_excerpt: true

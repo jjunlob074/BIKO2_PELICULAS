@@ -145,7 +145,30 @@
           <button class="c-spoiler__button">spoiler</button>
           <div class="c-spoiler__text">era broma, pero que haces :(  jajaja</div>
         </div>
-        </div>
+        <br>
+        {% set items_count = content.field_carousel['#items']|length %}
+
+        {% if items_count %}
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              {% for i in range(0, items_count - 1) %}
+                <div class="carousel-item {% if i == 0 %}active{% endif %}">
+                  {{ content.field_carousel[i] }}
+                </div>
+              {% endfor %}
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        {% endif %}
+
+      </div>
     </div>
   </div>
 </div>

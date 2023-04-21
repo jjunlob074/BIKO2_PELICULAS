@@ -1,0 +1,24 @@
+uuid: 0e33fc99-acfe-4d65-96a0-54b3381df797
+langcode: es
+status: true
+dependencies:
+  config:
+    - facets.facet.publicacion_pelicula
+  module:
+    - facets
+  theme:
+    - stable9_child
+id: publicacion_pelicula
+theme: stable9_child
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'facet_block:publicacion_pelicula'
+settings:
+  id: 'facet_block:publicacion_pelicula'
+  label: 'FECHA PUBLICACION'
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: publicacion_pelicula
+visibility: {  }

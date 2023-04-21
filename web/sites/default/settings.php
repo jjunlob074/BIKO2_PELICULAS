@@ -760,7 +760,27 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 if (file_exists(__DIR__ . '/settings.ddev.php') && getenv('IS_DDEV_PROJECT') == 'true') {
   include __DIR__ . '/settings.ddev.php';
 }
+  /**
+   * Configuración de Redis
+   */
+  $settings['container_yamls'][] = 'modules/contrib/redis/example.services.yml';
+  $settings['container_yamls'][] = 'modules/contrib/redis/redis.services.yml';
+  $settings['redis.connection']['interface'] = 'PhpRedis'; // Can be "Predis".
+  $settings['redis.connection']['host'] = 'redis';
+  $settings['redis.connection']['port'] = '6379';
+  $settings['redis.connection']['base'] = 15;
+  $settings['cache_prefix'] = 'drupal2_';
 
+  $settings['cache']['default'] = 'cache.backend.redis';
+
+  // Always set the fast backend for bootstrap, discover and config, otherwise
+  // this gets lost when redis is enabled.
+  $settings['cache']['bins']['bootstrap'] = 'cache.backend.chainedfast';
+  $settings['cache']['bins']['discovery'] = 'cache.backend.chainedfast';
+  $settings['cache']['bins']['config'] = 'cache.backend.chainedfast';
+
+  // Use for all queues unless otherwise specified for a specific queue.
+  $settings['queue_default'] = 'queue.redis';
 /**
  * Load local development override configuration, if available.
  *
@@ -781,3 +801,8 @@ if (file_exists(__DIR__ . '/settings.ddev.php') && getenv('IS_DDEV_PROJECT') == 
  $settings['config_sync_directory'] = 'sites/default/config/sync';
 
 
+
+// Include settings required for Redis cache.
+if ((file_exists(__DIR__ . '/settings.ddev.redis.php') && getenv('IS_DDEV_PROJECT') == 'true')) {
+  include __DIR__ . '/settings.ddev.redis.php';
+}

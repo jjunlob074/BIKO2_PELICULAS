@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.pill
     - field.field.node.peliculas.body
+    - field.field.node.peliculas.field_carousel
     - field.field.node.peliculas.field_categorias_peliculas
     - field.field.node.peliculas.field_image
     - field.field.node.peliculas.field_public_title
@@ -21,6 +22,11 @@ targetEntityType: node
 bundle: peliculas
 mode: pill
 content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
   field_image:
     type: image
     label: hidden
@@ -34,6 +40,7 @@ content:
     region: content
 hidden:
   body: true
+  field_carousel: true
   field_categorias_peliculas: true
   field_public_title: true
   field_publicacion_pelicula: true
@@ -41,3 +48,4 @@ hidden:
   field_trailer_youtube: true
   langcode: true
   links: true
+  search_api_excerpt: true

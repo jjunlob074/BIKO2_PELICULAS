@@ -1,0 +1,24 @@
+uuid: 9fec961f-0a63-4935-afbe-0f4bd86b8445
+langcode: es
+status: true
+dependencies:
+  config:
+    - facets.facet.categorias_peliculas
+  module:
+    - facets
+  theme:
+    - stable9_child
+id: categorias_peliculas
+theme: stable9_child
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'facet_block:categorias_peliculas'
+settings:
+  id: 'facet_block:categorias_peliculas'
+  label: CATEGORIAS
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: categorias_peliculas
+visibility: {  }

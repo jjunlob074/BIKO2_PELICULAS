@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.peliculas.body
+    - field.field.node.peliculas.field_carousel
     - field.field.node.peliculas.field_categorias_peliculas
     - field.field.node.peliculas.field_image
     - field.field.node.peliculas.field_public_title
@@ -29,6 +30,20 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 1
+    region: content
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
+  field_carousel:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 7
     region: content
   field_categorias_peliculas:
     type: entity_reference_label
@@ -84,3 +99,4 @@ content:
 hidden:
   langcode: true
   links: true
+  search_api_excerpt: true
