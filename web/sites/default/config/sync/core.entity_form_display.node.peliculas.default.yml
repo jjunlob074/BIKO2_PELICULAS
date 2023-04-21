@@ -5,6 +5,7 @@ dependencies:
   config:
     - entity_browser.browser.categoria
     - field.field.node.peliculas.body
+    - field.field.node.peliculas.field_carousel
     - field.field.node.peliculas.field_categorias_peliculas
     - field.field.node.peliculas.field_image
     - field.field.node.peliculas.field_public_title
@@ -19,6 +20,7 @@ dependencies:
     - datetime
     - entity_browser
     - focal_point
+    - media_library
     - paragraphs
     - path
     - text
@@ -42,6 +44,13 @@ content:
     weight: 4
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_carousel:
+    type: media_library_widget
+    weight: 26
+    region: content
+    settings:
+      media_types: {  }
     third_party_settings: {  }
   field_categorias_peliculas:
     type: entity_browser_entity_reference
@@ -149,6 +158,11 @@ content:
     settings:
       size: 255
       placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete

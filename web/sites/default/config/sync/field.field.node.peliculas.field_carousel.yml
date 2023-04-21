@@ -1,0 +1,29 @@
+uuid: c608bc93-5100-4679-9440-363d92bfd26a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_carousel
+    - media.type.image
+    - node.type.peliculas
+id: node.peliculas.field_carousel
+field_name: field_carousel
+entity_type: node
+bundle: peliculas
+label: carousel
+description: 'prueba del carrousel de bootstrap'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

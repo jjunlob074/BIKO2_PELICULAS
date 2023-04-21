@@ -129,6 +129,8 @@ class ComposerStaticInit27a42ef3db0036fb793a73180f9aad7b
         'D' => 
         array (
             'Drush\\' => 6,
+            'Drupal\\redis\\' => 13,
+            'Drupal\\facets_pretty_paths\\' => 27,
             'Drupal\\Core\\' => 12,
             'Drupal\\Composer\\Plugin\\Scaffold\\' => 32,
             'Drupal\\Composer\\Plugin\\ProjectMessage\\' => 38,
@@ -412,6 +414,14 @@ class ComposerStaticInit27a42ef3db0036fb793a73180f9aad7b
         'Drush\\' => 
         array (
             0 => __DIR__ . '/..' . '/drush/drush/src',
+        ),
+        'Drupal\\redis\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/web/modules/contrib/redis/src',
+        ),
+        'Drupal\\facets_pretty_paths\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/web/modules/contrib/facets_pretty_paths/src',
         ),
         'Drupal\\Core\\' => 
         array (

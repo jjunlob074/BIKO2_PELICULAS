@@ -69,6 +69,8 @@ return array(
     'Enlightn\\SecurityChecker\\' => array($vendorDir . '/enlightn/security-checker/src'),
     'Egulias\\EmailValidator\\' => array($vendorDir . '/egulias/email-validator/src'),
     'Drush\\' => array($vendorDir . '/drush/drush/src'),
+    'Drupal\\redis\\' => array($baseDir . '/web/modules/contrib/redis/src'),
+    'Drupal\\facets_pretty_paths\\' => array($baseDir . '/web/modules/contrib/facets_pretty_paths/src'),
     'Drupal\\Core\\' => array($baseDir . '/web/core/lib/Drupal/Core'),
     'Drupal\\Composer\\Plugin\\Scaffold\\' => array($vendorDir . '/drupal/core-composer-scaffold'),
     'Drupal\\Composer\\Plugin\\ProjectMessage\\' => array($vendorDir . '/drupal/core-project-message'),
