@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "11987af5ad1ab258d7653ecb6221af7f",
+    "content-hash": "7be8c007eebb41edb0c4989e9e1cf6e6",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2872,6 +2872,64 @@
             }
         },
         {
+            "name": "drupal/layout_paragraphs",
+            "version": "2.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/layout_paragraphs.git",
+                "reference": "2.0.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/layout_paragraphs-2.0.2.zip",
+                "reference": "2.0.2",
+                "shasum": "5157a05120d81f0978093ddbdf92c3ead2e11010"
+            },
+            "require": {
+                "drupal/core": "^9.1 || ^10",
+                "drupal/paragraphs": "^1.6"
+            },
+            "require-dev": {
+                "drupal/block_field": "~1.0",
+                "drupal/entity_usage": "2.x-dev",
+                "drupal/paragraphs-paragraphs_library": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.2",
+                    "datestamp": "1671393681",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "itamair",
+                    "homepage": "https://www.drupal.org/user/1179076"
+                },
+                {
+                    "name": "justin2pin",
+                    "homepage": "https://www.drupal.org/user/278450"
+                }
+            ],
+            "description": "Layout Paragraphs",
+            "homepage": "https://www.drupal.org/project/layout_paragraphs",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/layout_paragraphs",
+                "issues": "https://www.drupal.org/project/issues/layout_paragraphs"
+            }
+        },
+        {
             "name": "drupal/metatag",
             "version": "1.22.0",
             "source": {
@@ -3271,6 +3329,81 @@
                 "source": "https://cgit.drupalcode.org/pathauto",
                 "issues": "https://www.drupal.org/project/issues/pathauto",
                 "documentation": "https://www.drupal.org/docs/8/modules/pathauto"
+            }
+        },
+        {
+            "name": "drupal/quickedit",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/quickedit.git",
+                "reference": "1.0.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/quickedit-1.0.3.zip",
+                "reference": "1.0.3",
+                "shasum": "2fb9eb812010743949dd7ec1a9fc0cff4c1fb4ce"
+            },
+            "require": {
+                "drupal/core": "^9.4 || ^10"
+            },
+            "require-dev": {
+                "drupal/ckeditor": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.3",
+                    "datestamp": "1663069901",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Devin Carlson",
+                    "homepage": "https://www.drupal.org/user/290182"
+                },
+                {
+                    "name": "dww",
+                    "homepage": "https://www.drupal.org/user/46549"
+                },
+                {
+                    "name": "Gábor Hojtsy",
+                    "homepage": "https://www.drupal.org/user/4166"
+                },
+                {
+                    "name": "jessebeach",
+                    "homepage": "https://www.drupal.org/user/748566"
+                },
+                {
+                    "name": "nod_",
+                    "homepage": "https://www.drupal.org/user/598310"
+                },
+                {
+                    "name": "tkoleary",
+                    "homepage": "https://www.drupal.org/user/627430"
+                },
+                {
+                    "name": "webchick",
+                    "homepage": "https://www.drupal.org/user/24967"
+                },
+                {
+                    "name": "Wim Leers",
+                    "homepage": "https://www.drupal.org/user/99777"
+                }
+            ],
+            "description": "In-place content editing (contrib).",
+            "homepage": "https://www.drupal.org/project/quickedit",
+            "support": {
+                "source": "https://git.drupalcode.org/project/quickedit"
             }
         },
         {

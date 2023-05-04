@@ -67,8 +67,9 @@
  *
  */
 #}
+<article {{ attributes }}>
 {#{{ devel_breakpoint() }}#}
-<div class="cb-movie-full">
+<div{{ attributes.addClass('cb-movie-full') }}>
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
@@ -79,6 +80,7 @@
           </h2>
         {{ title_suffix }}
       </div>
+        <div{{ content_attributes }}>
         <h5 class="c-text sha1">SHA1: {{ sha1 }}</h5>
       <div class="c-image">
         {{ content.field_image}}
@@ -140,11 +142,13 @@
           {% endif %}
         </div>
         <br>
+        {% if content.field_spoiler[0] %}
         <h4> ¿HAS LLEGADO HASTA AQUÍ?...</h4>
         <div class="c-spoiler">
           <button class="c-spoiler__button">spoiler</button>
-          <div class="c-spoiler__text">era broma, pero que haces :(  jajaja</div>
+          <div class="c-spoiler__text">{{ content.field_spoiler }}</div>
         </div>
+        {% endif %}
         <br>
         {% set items_count = content.field_carousel['#items']|length %}
 
@@ -172,7 +176,6 @@
     </div>
   </div>
 </div>
-
-
-
+</div>
+</article>
 

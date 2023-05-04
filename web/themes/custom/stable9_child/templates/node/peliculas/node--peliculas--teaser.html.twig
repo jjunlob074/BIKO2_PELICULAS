@@ -67,8 +67,8 @@
  *
  */
 #}
-
-    <div class="cb-movie-teaser">
+{#   {{ devel_breakpoint() }}#}
+<div{{ attributes.addClass('cb-movie-teaser') }}>
       <div class="container">
         <div class="row">
     <div class="cb-movie-teaser__aside col-xs-12 col-md-12 col-lg-6 col-xl-4 col-xxl-3">
@@ -107,11 +107,13 @@
       <div class="c-date">
         <h4 class="c-date__date"> Fecha Estreno: {{ content.field_publicacion_pelicula }}</h4>
       </div>
+      {% if content.field_spoiler[0] %}
       <h5>¿PARA QUE VAS A IR A VER LA PELÍCULA?</h5>
       <div class="c-spoiler">
         <button class="c-spoiler__button">spoiler</button>
-        <div class="c-spoiler__text">era broma, pero que haces :(  jajaja</div>
+        <div class="c-spoiler__text">{{ content.field_spoiler[0] }}</div>
       </div>
+      {% endif %}
       <div class="c-button">
         <a class="c-button__link" href="{{ url }}">
           <button class="c-button__button">
