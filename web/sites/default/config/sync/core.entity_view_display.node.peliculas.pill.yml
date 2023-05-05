@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.peliculas.field_public_title
     - field.field.node.peliculas.field_publicacion_pelicula
     - field.field.node.peliculas.field_relacionadas
+    - field.field.node.peliculas.field_spoiler
     - field.field.node.peliculas.field_trailer_youtube
     - image.style.thumbnail
     - node.type.peliculas
@@ -45,6 +46,7 @@ hidden:
   field_public_title: true
   field_publicacion_pelicula: true
   field_relacionadas: true
+  field_spoiler: true
   field_trailer_youtube: true
   langcode: true
   links: true

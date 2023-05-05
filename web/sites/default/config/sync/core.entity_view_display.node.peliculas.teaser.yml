@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.peliculas.field_public_title
     - field.field.node.peliculas.field_publicacion_pelicula
     - field.field.node.peliculas.field_relacionadas
+    - field.field.node.peliculas.field_spoiler
     - field.field.node.peliculas.field_trailer_youtube
     - node.type.peliculas
     - responsive_image.styles.responsive
@@ -30,12 +31,12 @@ content:
     settings:
       trim_length: 600
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
   content_moderation_control:
     settings: {  }
     third_party_settings: {  }
-    weight: -20
+    weight: 0
     region: content
   field_categorias_peliculas:
     type: entity_reference_label
@@ -43,7 +44,7 @@ content:
     settings:
       link: false
     third_party_settings: {  }
-    weight: 3
+    weight: 4
     region: content
   field_image:
     type: responsive_image
@@ -52,7 +53,7 @@ content:
       responsive_image_style: responsive
       image_link: content
     third_party_settings: {  }
-    weight: 0
+    weight: 1
     region: content
   field_publicacion_pelicula:
     type: datetime_default
@@ -61,7 +62,14 @@ content:
       timezone_override: ''
       format_type: olivero_medium
     third_party_settings: {  }
-    weight: 2
+    weight: 3
+    region: content
+  field_spoiler:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
     region: content
 hidden:
   field_carousel: true

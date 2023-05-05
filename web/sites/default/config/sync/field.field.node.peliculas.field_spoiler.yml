@@ -1,0 +1,26 @@
+uuid: 839cba1d-1f9f-4ef4-8afb-c8c1b13b2551
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_spoiler
+    - node.type.peliculas
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    allowed_formats:
+      - full_html
+id: node.peliculas.field_spoiler
+field_name: field_spoiler
+entity_type: node
+bundle: peliculas
+label: spoiler
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

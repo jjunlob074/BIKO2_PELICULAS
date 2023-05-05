@@ -10,12 +10,13 @@ dependencies:
     - field.field.node.peliculas.field_public_title
     - field.field.node.peliculas.field_publicacion_pelicula
     - field.field.node.peliculas.field_relacionadas
+    - field.field.node.peliculas.field_spoiler
     - field.field.node.peliculas.field_trailer_youtube
     - node.type.peliculas
     - responsive_image.styles.responsive
   module:
     - datetime
-    - entity_reference_revisions
+    - layout_paragraphs
     - responsive_image
     - text
     - user
@@ -87,14 +88,21 @@ content:
     third_party_settings: {  }
     weight: 6
     region: content
-  field_trailer_youtube:
-    type: entity_reference_revisions_entity_view
+  field_spoiler:
+    type: text_default
     label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_trailer_youtube:
+    type: layout_paragraphs
+    label: above
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 5
+    weight: 9
     region: content
 hidden:
   langcode: true
